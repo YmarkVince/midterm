@@ -16,7 +16,7 @@ function getUsers() {
 function validateLoginCredentials($email, $password) {
     $errors = [];
     if (empty($email)) {
-        $errors[] = "Email is required.";
+        $errors[] = "Email is required."; 
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format.";
     }
